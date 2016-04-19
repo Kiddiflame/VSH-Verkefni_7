@@ -1,0 +1,762 @@
+.col-1-6 img{
+  display: none;
+}
+
+.drag img{
+  display: none;
+}
+
+
+/*
+  ========================================
+  Border box
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Grid system
+  ========================================
+*/
+
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+  padding: 0 1em; /*0 top-bottom / 16px L R*/
+  float:left;  /* var display:inline-block -> er (verri) lausn þar sem "white space" er virkt á milli html taga */
+  /*border: 1px dotted red;*/
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-2 {
+  width: 50%;
+}
+/*
+  ========================================
+  Base
+  ========================================
+*/
+body {
+  margin: 0 auto;
+  width: 60em;     /*notið em, m.t. tækja með hágæða "retina" skjáupplausn;*/
+}
+/*header, section, footer {
+    border: 1px dotted blue;
+}*/
+footer nav, footer h4 {
+  margin-top: 1em;
+}
+header nav {
+  margin-top: 1.3em;
+}
+footer {
+  background: #555; 
+}
+footer nav{
+  max-height: 100%;
+  background: #555;
+  padding: 0 0 0 1em;
+}
+footer nav:first-child{
+  border-left: none;
+}
+footer a{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: .4em 0;
+  border-bottom: 1px solid;
+}
+footer a:hover{
+  background-color: #999;
+
+} 
+
+footer ul{
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+footer p{
+  line-height: 1.6em;
+  margin-bottom: 1.3em;
+  padding-right: 1em;
+}
+.col-1-3 h4{
+  color: #fff;
+}
+.footermenu {
+  margin-bottom: 1em;
+}
+
+/*
+  ========================================
+  Efnisyfirlit
+  ========================================
+*/
+header ul {
+  background-color: #4CAF50;
+  border:none;
+  padding: 0;
+  margin: 0;}
+
+
+
+header li a {
+  color: #fff;
+  text-decoration: none;
+    padding-left: 36px;
+}
+
+header input {
+  display: none;
+}
+
+header input:checked ~ nav {
+  max-height: 500px;
+}
+
+/*Titill og Border*/
+header label {
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px 9px;
+  transition: all .15s ease;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  width: 100%;
+  line-height: 3em;
+  background-color: #4CAF50;
+}
+
+header label:hover {
+  color: black;
+  
+}
+
+header nav {
+  max-height: 0;
+  overflow: hidden;
+  transition: all .15s ease;
+}
+
+/*
+li {
+  
+  Lita skema
+
+}*/
+
+header li:hover {
+  
+   background-color: #3e8e41;
+}
+/*Stjórn yfir linkum*/
+header a {
+  color: #0087cc;
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+
+
+/*
+  ========================================
+  Box positions
+  ========================================
+*/
+figure {
+  padding: 0;
+  margin: 0;
+}
+img{
+  width: 50%;
+  height: auto;
+  display: block;
+  float: left;
+}
+.box-set {
+  background: lightgrey;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.sMedia li:nth-child(4n+1) {
+        background: rgb(208, 101, 3);
+           
+      }
+
+      .sMedia li:nth-child(4n+2) {
+        background: rgb(233, 147, 26);
+                
+      }
+
+      .sMedia li:nth-child(4n+3) {
+        background: rgb(22, 145, 190);
+                
+      }
+
+      .sMedia li:nth-child(4n+4) {
+        background: rgb(22, 107, 162);
+                
+      }
+
+       .sMedia ul li:nth-child(4n+1) a:hover,
+       .sMedia ul li:nth-child(4n+1) a:active,
+       .sMedia ul li:nth-child(4n+1) a:focus {
+        background: rgb(227, 119, 20);
+      }
+
+       .sMedia li:nth-child(4n+2) a:hover,
+       .sMedia li:nth-child(4n+2) a:active,
+       .sMedia li:nth-child(4n+2) a:focus {
+          background: rgb(245, 160, 41);
+        }
+
+       .sMedia li:nth-child(4n+3) a:hover,
+       .sMedia li:nth-child(4n+3) a:active,
+       .sMedia li:nth-child(4n+3) a:focus {
+          background: rgb(44, 168, 219);
+        }
+
+       .sMedia li:nth-child(4n+4) a:hover,
+       .sMedia li:nth-child(4n+4) a:active,
+       .sMedia li:nth-child(4n+4) a:focus {
+          background: rgb(31, 120, 176);
+        }
+
+        .sMedia ul li {
+          transition: background 0.5s;
+        } 
+
+
+
+      .sMedia {
+        text-align: center;
+        position: relative;
+        bottom: 0em;
+        height: 5em;
+        width: 100%;
+        padding-top: 1em;
+        background-color: #fff;
+        /*margin: 0 auto;*/
+        
+      }
+      .sMedia li {
+
+        margin: 0 auto;
+        width: 20%;
+        display: inline-block;
+      }
+      .sMedia ul {
+        margin: 0 auto;/*Breidd frá footer*/
+        padding: 0;
+        list-style-type: none;
+        width: 100%;    
+      }
+      .sMedia a {
+        text-decoration: none;
+        display: block;
+      }
+
+  /*
+  ========================================
+  Social buttons
+  ========================================
+  */
+
+
+      .twitter {
+        margin: 0 auto;
+        height: 3em;
+        width: 3em;
+        background: transparent url('img/logos.png') 0 0 no-repeat;
+      }
+      .facebook {
+        margin: 0 auto;
+        height: 3em;
+        width: 3em;
+        background: transparent url('img/logos.png') 0  -3em no-repeat;
+      }
+      .pinterest {
+        margin: 0 auto;
+        height: 3em;
+        width: 3em;
+        background: transparent url('img/logos.png') 0 -6em no-repeat;
+      }
+      .google {
+        margin: 0 auto;
+        height: 3em;
+        width: 3em;
+        background: transparent url('img/logos.png') 0 -9em no-repeat;
+      }
+
+
+
+    .slider {
+padding: 0;
+margin: 0 auto;
+    height: 12.5em;
+    width: 12.5em;
+}
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+.slider img {
+    height: 12.5em;
+    width: 12.5em;
+    vertical-align: top;
+}
+
+.slider input {
+    display: none;
+
+}
+
+
+
+.slider label {
+    background-color: white;
+    border: .2em solid ;
+    bottom: .5em;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 2em;
+    left: 24em;
+    opacity: 100;
+    position: absolute;
+    transition: .25s;
+    width: 2em;
+    
+    z-index: 10;
+}
+
+.slider label:after {
+  border-radius: 100%;
+    bottom: -.2em;
+    box-shadow: inset 0 0 0 .2em #111,
+                inset 0 2px 2px #000,
+                0 1px 1px hsla(0,0%,100%,.25);
+    content: '';
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+.slider li:nth-child(1) label {
+    left: .5em;
+}
+.slider li:nth-child(2) label {
+
+    left: 3em;
+}
+.slider li:nth-child(3) label {
+    left: 5em;
+}
+.slider li:nth-child(4) label {
+    left: 8em;
+}
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+
+
+
+
+
+@media screen and (min-width: 0em){
+  body,header,section,footer{
+    display: block;
+    width: 100%;
+  }
+  .group {
+    width: 100%;
+    display: block;
+    width: auto;
+  }
+  .col-2-3{
+  width: 100%;
+  }
+  .col-1-2 {
+    width: 100%;
+  }
+
+  .col-1-3{
+    width: 100%;
+  }
+
+  .slider {
+    margin: 0 auto;
+  }
+
+  .slider li:nth-child(1) label {
+    top: 2em;
+    left: -2em;
+  }
+  .slider li:nth-child(2) label {
+    top: 8em;
+    left: -2em;
+  }
+  .slider li:nth-child(3) label {
+    top: 2em;
+    left: 13em;
+  }
+  .slider li:nth-child(4) label {
+    top: 8em;
+    left: 13em;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 30em){
+
+
+  header input ~ nav {
+    max-height: 500px;
+  }
+  header label{
+    display: none;
+  }
+  header {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: none;
+  }
+  header li {
+    display: block;
+  }
+  header li a{
+    display: block;
+    list-style-type: none;
+    padding: .9em 1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    /*border-radius: 4px 4px 0 0;*/
+  }
+  header li a:hover {
+    background-color: grey;
+  }
+
+  .topmenu {
+    display: block;
+  }
+  .dropbtn {
+    display: none;
+  }
+
+
+  .col-2-3{
+    width: 100%;
+  }
+  .col-1-2 {
+    width: 50%;
+  }
+
+  .col-1-3{
+    width: 100%;
+  }
+
+    .slider {
+      margin: 0 auto;
+    }
+
+    .slider li:nth-child(1) label {
+    top: 13em;
+    left: 1em;
+  }
+  .slider li:nth-child(2) label {
+    top: 13em;
+    left: 4em;
+  }
+  .slider li:nth-child(3) label {
+    top: 13em;
+    left: 7em;
+  }
+  .slider li:nth-child(4) label {
+    top: 13em;
+    left: 10em;
+  }
+
+
+}
+
+@media screen and (min-width: 48em){
+  .dropbtn {
+    display: none;
+
+  }
+  header {
+    display: inline-block;
+  }
+  header ul {
+      background-color:white;
+  }
+  header li {
+    display: inline-block;
+  }
+  header li a{
+        border-radius: 0.5em 0.5em 0 0;
+  }
+  header li:hover {
+    background-color: #3e8e41;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+}
+
+
+@media screen and (min-width: 60em){
+  body{
+    width: 50em;
+  }
+  footer{
+    width: 100%;
+  }
+  footer nav{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .drag img{
+    display: block;
+  }
+
+.col-1-3,
+.col-2-3,
+.col-1-2 {
+  padding: 0 1em; /*0 top-bottom / 16px L R*/
+  float:left;  /* var display:inline-block -> er (verri) lausn þar sem "white space" er virkt á milli html taga */
+  /*border: 1px dotted red;*/
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-5 {
+  width: 50%;
+}
+/*
+.sMedia li:nth-child(4n+4) {
+  background: rgb(22, 107, 162);
+
+}*/
+
+.sMedia {
+  text-align: left;
+  position: fixed;
+  top: 2em;
+  right: 0;
+  width: 3em;
+  height: 12em;
+  padding-top: 0;
+  background-color: #007;
+}
+.sMedia li {
+  margin: 0 auto;
+  width: 3em;
+  display: block;
+}
+.sMedia ul {
+  list-style-type: none;
+  width: 3em;
+
+}
+.sMedia a {
+  width: 3em;
+}
+
+
+  /*
+  ========================================
+  Social buttons
+  ========================================
+*/
+
+
+.twitter {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: transparent url('img/logos.png') 0 0 no-repeat;
+}
+.facebook {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: transparent url('img/logos.png') 0  -3em no-repeat;
+}
+.pinterest {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: transparent url('img/logos.png') 0 -6em no-repeat;
+}
+.google {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: transparent url('img/logos.png') 0 -9em no-repeat;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+.col-1-4 img{
+  width: 50%;
+  height: auto;
+  display: block;
+  float: left;
+}
+
+.col-1-4{
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+.col-1-4:hover{
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transition: all 3s ease;
+  -moz-transition: all 3s ease;
+  -ms-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.col-1-6 img{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.col-1-6 img.top{
+  z-index: 2;
+  top: 38.9em;
+  width: 501px;
+  height: 284px;
+  position: absolute;
+}
+.col-1-6 img.top:hover{
+  opacity: 0;
+    -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slider { 
+  margin: 0;
+  
+}
+.slider label {
+    background-color: white;
+    bottom: .5em;
+    cursor: pointer;
+    display: block;
+    height: 1em;
+    left: 24em;
+    position: absolute;
+    transition: .25s;
+    width: 1em;
+    z-index: 10;
+}
+.slider label:after {
+    bottom: -.2em;
+
+    left: -.2em;
+    position: absolute;
+    right: -.2em;
+    top: -.2em;
+}
+
+.slider li:nth-child(1) label {
+    top: 12.5em;
+    left: 1em;
+  }
+  .slider li:nth-child(2) label {
+    top: 12.5em;
+    left: 4em;
+  }
+  .slider li:nth-child(3) label {
+    top: 12.5em;
+    left: 7em;
+  }
+  .slider li:nth-child(4) label {
+    top: 12.5em;
+    left: 10em;
+  }
+
+}
+
+
+
+
+
+
+
