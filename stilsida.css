@@ -158,8 +158,7 @@ header a {
   }
 
   .logo{
-
-
+    vertical-align: middle;
     height: 20em;
     width: 60em;
   }
@@ -167,6 +166,8 @@ header a {
 
 
 @media screen and (min-width: 60em){
+  
+
   body{
     width: 50em;
   }
