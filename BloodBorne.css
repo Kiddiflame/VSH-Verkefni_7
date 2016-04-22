@@ -6,7 +6,7 @@ html {
   background-size: cover;
 }
 
-.bloodborne:hover{
+.bloodborne a:hover{
 
 background-color: darkgreen;
   cursor: pointer;

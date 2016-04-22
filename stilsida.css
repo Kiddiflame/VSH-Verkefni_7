@@ -21,7 +21,7 @@ background-color: grey;
   width: 100%;
 }
 
-.darksouls:hover{
+.darksouls a:hover{
 
   background-color: red;
   cursor: pointer;
@@ -32,7 +32,7 @@ background-color: grey;
 
 }
 
-.darksouls2:hover{
+.darksouls2 a:hover{
 
  background-color: yellow;
   cursor: pointer;
@@ -43,7 +43,7 @@ background-color: grey;
 
 }
 
-.demonsouls:hover{
+.demonsouls a:hover{
 
  background-color: purple;
   cursor: pointer;
@@ -54,7 +54,7 @@ background-color: grey;
 
 }
 
-.bloodborne:hover{
+.bloodborne a:hover{
 
 background-color: darkgreen;
   cursor: pointer;
@@ -171,14 +171,6 @@ header a {
     text-decoration: none;
     width: 10em;
     /*border-radius: 4px 4px 0 0;*/
-  }
-  header li a:hover {
-     background-color: red;
-  cursor: pointer;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
   }
 }
 
