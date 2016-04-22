@@ -250,8 +250,19 @@ footer li a:hover{
     background-color: #3e8e41;
     border-radius: 0.5em 0.5em 0 0;
   }
+<<<<<<< HEAD
 
 
+=======
+ /**/
+  .logo{
+    margin-top: -.2em;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+  }
+>>>>>>> a902020f0eeb2d90525e2f505051bd4bf056c498
 }
 
 
