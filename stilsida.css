@@ -21,6 +21,49 @@ background-color: grey;
   width: 100%;
 }
 
+.darksouls:hover{
+
+  background-color: red;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+.darksouls2:hover{
+
+ background-color: yellow;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+.demonsouls:hover{
+
+ background-color: purple;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
+
+.bloodborne:hover{
+
+background-color: darkgreen;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+
+}
 
 
 footer nav, footer h4 {
@@ -66,7 +109,7 @@ header input:checked ~ nav {
   background-color: #4CAF50;
 }*/
 
-header label:hover {
+/*header label:hover {
   color: black;
   
 }
@@ -130,7 +173,12 @@ header a {
     /*border-radius: 4px 4px 0 0;*/
   }
   header li a:hover {
-    background-color: grey;
+     background-color: red;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
   }
 }
 
