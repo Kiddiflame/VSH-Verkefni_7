@@ -85,6 +85,7 @@
 
 
 form {
+  text-align: center;
   color: rgba(220,220,220, 0.8);
   width: 70%;
   margin:  10% auto  0 auto;
@@ -370,4 +371,7 @@ width: 100%;
     margin: 0;
   }
 
+  .Navigation img{
+    width: 25%;
+  }
 }
