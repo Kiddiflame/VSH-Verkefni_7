@@ -5,3 +5,28 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+.bloodborne a:hover{
+      background-color: rgba(10,100,10,0.7);
+
+}
+.darksouls a:hover{
+      background-color: rgba(100,0,0,0.7);
+}
+.darksouls2 a:hover{
+      background-color: rgba(200,200,0,0.5);
+}
+.demonsouls a:hover{
+      background-color: rgba(90,0,90,0.9);
+}
+.bloodborne a{
+	background-color: rgba(155,155,155,0.15);
+}
+.darksouls a{
+	background-color: rgba(155,155,155,0.15);
+}
+.darksouls2 a{
+	background-color: rgba(155,155,155,0.15);
+}
+.demonsouls a{
+	background-color: rgba(155,155,155,0.15);
+}
